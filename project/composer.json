@@ -1,0 +1,17 @@
+{
+    "name": "facile-it/hackathon2017-badge-labels",
+    "description": "Hackathon 2017 Badge Labels",
+    "type": "project",
+    "require": {
+        "setasign/fpdf": "^1.8",
+        "nategood/commando": "^0.2.9",
+        "aferrandini/phpqrcode": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Salvatore Cordiano",
+            "email": "github@parallel.it"
+        }
+    ]
+}
