@@ -29,12 +29,6 @@ while (($data = fgetcsv($handle, 1000, ";")) !== false) {
             case 1:
                 $attendee['firstname'] = $data[$c];
                 break;
-            case 2:
-                $attendee['title'] = $data[$c];
-                break;
-            case 3:
-                $attendee['code'] = $data[$c];
-                break;
         }
     }
     $attendees[] = $attendee;
