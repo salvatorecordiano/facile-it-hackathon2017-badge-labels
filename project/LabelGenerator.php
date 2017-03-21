@@ -65,9 +65,14 @@ class LabelGenerator
 
         $this->pdf->Line(3, 9, 87, 9);
 
-        $this->pdf->SetFont('Arial','', 21);
+        $this->pdf->SetFont('Arial','B', 21);
         $this->pdf->SetXY(2, 12.5);
         $this->pdf->MultiCell(86, 8, $this->convertText(sprintf('%s %s', $attendee['firstname'], $attendee['lastname'])), 0, 'L', false);
+
+        // $this->pdf->SetFont('Arial','', 21);   
+        // $this->pdf->SetXY(2, 20.5);
+        // $this->pdf->MultiCell(86, 8, $this->convertText('Giuria'), 0, 'L', false);
+        // $this->pdf->MultiCell(86, 8, $this->convertText('HR Specialist'), 0, 'L', false);
 
         $this->pdf->Line(3, 32, 87, 32);
         $this->pdf->SetFont('Arial','', 7);
